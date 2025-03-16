@@ -1,25 +1,8 @@
-# Full-stack-web-app-using-Django-and-React
+# React + Vite
 
-Veterinary Clinic Management System
-Track medical history, manage consultations, and streamline veterinary workflows
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-🛠️ Technologies
- - Backend : Django, MySQL
- - Frontend : React!
-
- - Database Design : Entity-Relationship Model
-
-🚀 Key Features
-Patient Management :
- - Track animals, owners, medical history, and treatments.
-Consultations :
- - Schedule appointments with doctors and view cost details.
-Advanced Queries :
- - Filter animals by age, list high-risk diseases, and generate cost summaries .
-
-📝 Architecture
- - Database Relationships :
-   - Owner ↔ Animal (1:N)
-   - Doctor ↔ Consultation (1:N)
-   - Animal ↔ Disease (N:N via Diagnosis) .
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

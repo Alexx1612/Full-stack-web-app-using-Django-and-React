@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+.simple-interrogations{
+    background-image: url('/Bingus.jpg'); /* Background image for the page */
+    background-size: 14.2857142857%;
+
+}
+
+.simple-interrogations-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px; /* Space between buttons and result box */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between each button */
+}
+
+.button-container button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left; /* Align button text to the left */
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.results-box {
+    flex-grow: 1; /* Allow the results box to grow and take available space */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 16px;
+    line-height: 1.6; /* Increase line spacing for readability */
+    overflow-y: auto; /* Add scroll if content overflows */
+    max-height: 600px; /* Limit the height of the results box */
+    width: 50%;
+}
+
+/* Styling for each result block */
+.results-box .result {
+    margin-bottom: 20px; /* Space between results */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Draw a line between each result */
+}
+
+.results-box .result:last-child {
+    border-bottom: none; /* Remove line for the last result */
+}
